@@ -1,0 +1,77 @@
+{
+  "description": "YuanJiang AI Assistance — project-level security baseline. All sub-agents inherit these rules. Local overrides go in settings.local.json (never committed).",
+
+  "permissions": {
+    "deny": [
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/secrets)",
+      "Read(**/secrets/**)",
+      "Read(**/credentials.*)",
+      "Read(data/raw/**)",
+      "Read(data/processed/**)",
+      "Read(data/runtime/**)",
+      "Read(**/models/**)",
+      "Read(**/vector_store/**)",
+      "Read(**/chroma/**)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(git reset *)",
+      "Bash(git clean -*)",
+      "Bash(rm -rf *)",
+      "Bash(rm -r *)",
+      "Bash(Remove-Item -Recurse -Force *)"
+    ],
+
+    "ask": [
+      "Bash(git commit*)",
+      "Bash(git push*)",
+      "Bash(pip install*)",
+      "Bash(pip uninstall*)",
+      "Bash(kaggle *)",
+      "Bash(docker *)",
+      "Bash(ollama *)",
+      "Bash(python -m pip *)"
+    ],
+
+    "allow": [
+      "Read(src/**)",
+      "Read(tests/**)",
+      "Read(docs/**)",
+      "Read(data/sample/**)",
+      "Read(data/eval/**)",
+      "Read(.claude/**)",
+      "Read(README.md)",
+      "Read(pyproject.toml)",
+      "Read(.gitignore)",
+      "Write(src/**)",
+      "Write(tests/**)",
+      "Write(docs/**)",
+      "Write(data/sample/**)",
+      "Write(data/eval/**)",
+      "Write(.claude/agents/**)",
+      "Edit(src/**)",
+      "Edit(tests/**)",
+      "Edit(docs/**)",
+      "Edit(data/sample/**)",
+      "Edit(data/eval/**)",
+      "Edit(.claude/agents/**)",
+      "Bash(python *)",
+      "Bash(pytest *)",
+      "Bash(echo *)",
+      "Bash(mkdir *)",
+      "Bash(ls *)",
+      "Bash(Get-ChildItem *)",
+      "Bash(Select-Object *)",
+      "Bash(Get-Content *)",
+      "Bash(Test-Path *)",
+      "Bash(where *)",
+      "Bash(ollama list)"
+    ]
+  },
+
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": false
+  }
+}
