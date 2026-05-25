@@ -1,0 +1,7 @@
+order_id,payment_sequential,payment_type,payment_installments,payment_value
+ord_001,1,credit_card,3,175.50
+ord_002,1,credit_card,1,104.90
+ord_002,2,voucher,1,45.00
+ord_003,1,debit_card,1,175.50
+ord_004,1,credit_card,6,230.00
+ord_005,1,credit_card,4,484.90

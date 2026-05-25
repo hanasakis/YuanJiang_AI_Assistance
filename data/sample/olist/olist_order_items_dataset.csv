@@ -1,0 +1,8 @@
+order_id,order_item_id,product_id,seller_id,shipping_limit_date,price,freight_value
+ord_001,1,prod_001,seller_A,2024-01-05 00:00:00,150.00,25.50
+ord_002,1,prod_002,seller_B,2024-01-08 00:00:00,89.90,15.00
+ord_002,2,prod_003,seller_C,2024-01-08 00:00:00,45.00,10.00
+ord_003,1,prod_001,seller_A,2024-01-06 00:00:00,150.00,25.50
+ord_004,1,prod_004,seller_D,2024-01-10 00:00:00,200.00,30.00
+ord_005,1,prod_002,seller_B,2024-01-12 00:00:00,89.90,15.00
+ord_005,2,prod_005,seller_A,2024-01-12 00:00:00,350.00,45.00

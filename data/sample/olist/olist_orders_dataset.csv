@@ -1,0 +1,6 @@
+order_id,customer_id,order_status,order_purchase_timestamp,order_approved_at,order_delivered_carrier_date,order_delivered_customer_date,order_estimated_delivery_date
+ord_001,cust_001,delivered,2024-01-01 10:00:00,2024-01-01 12:00:00,2024-01-03 08:00:00,2024-01-08 14:00:00,2024-01-10 00:00:00
+ord_002,cust_002,delivered,2024-01-02 09:00:00,2024-01-02 11:00:00,2024-01-05 10:00:00,2024-01-20 16:00:00,2024-01-12 00:00:00
+ord_003,cust_003,delivered,2024-01-03 08:00:00,2024-01-03 10:00:00,2024-01-04 09:00:00,2024-01-07 11:00:00,2024-01-09 00:00:00
+ord_004,cust_001,canceled,2024-01-04 14:00:00,,,,2024-01-15 00:00:00
+ord_005,cust_004,delivered,2024-01-05 16:00:00,2024-01-05 18:00:00,2024-01-08 12:00:00,2024-01-30 10:00:00,2024-01-20 00:00:00

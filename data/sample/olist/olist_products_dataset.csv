@@ -1,0 +1,6 @@
+product_id,product_category_name,product_name_lenght,product_description_lenght,product_photos_qty,product_weight_g,product_length_cm,product_height_cm,product_width_cm
+prod_001,electronics,45,200,3,500,30,5,20
+prod_002,books,30,150,2,300,20,3,15
+prod_003,home_decor,55,250,4,800,40,10,30
+prod_004,electronics,50,180,2,1200,35,15,25
+prod_005,furniture,60,300,5,15000,100,50,80

@@ -1,0 +1,5 @@
+review_id,order_id,review_score,review_comment_title,review_comment_message,review_creation_date,review_answer_timestamp
+rev_001,ord_001,4,Good product,Delivered on time and works well,2024-01-15 00:00:00,2024-01-16 00:00:00
+rev_002,ord_002,2,Late delivery,Arrived 8 days after estimate,2024-01-25 00:00:00,2024-01-26 00:00:00
+rev_003,ord_003,5,Excellent,Perfect quality and fast shipping,2024-01-10 00:00:00,2024-01-11 00:00:00
+rev_004,ord_005,1,Terrible experience,Product defective and late,2024-02-05 00:00:00,2024-02-06 00:00:00
