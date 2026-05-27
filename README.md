@@ -42,21 +42,27 @@
 ## 运行方式
 
 ```bash
-# 1. 启动 Ollama
+# 1. 启动 Ollama（确保已拉取 DeepSeek-R1:8b）
 ollama serve
 
 # 2. 安装依赖
 pip install -r requirements.txt
 
-# 3. 下载数据（放入 data/raw/）
-# 从 Kaggle 下载 Olist 数据集
+# 3. 准备数据（二选一）
+#  a) Demo 模式：使用内置 sample 数据，无需下载
+#  b) 完整模式：从 Kaggle 下载 Olist 数据集到 data/raw/
 
-# 4. 构建数据库
-python -m src.data_ops.builder
+# 4. 构建 DuckDB 数据库（demo 模式使用 sample 数据）
+python -m src.data_ops.build_duckdb
 
-# 5. 启动 UI
-streamlit run src/app/ui.py
+# 5. 构建 SOP 检索索引
+python -c "from src.rag.fts_index import build_fts_index; build_fts_index()"
+
+# 6. 启动运营工作台
+streamlit run src/app/main.py
 ```
+
+Demo 模式无需 Ollama 也能体验：侧边栏提供预设查询，展示指标查询、SOP 检索和任务创建流程。
 
 ## 项目结构
 
