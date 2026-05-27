@@ -16,6 +16,11 @@ dist/
 build/
 .venv/
 venv/
+env/
+
+# Conda environment
+.conda/
+condaenv/
 
 # ============================================================
 # Data — raw and processed should NOT be committed

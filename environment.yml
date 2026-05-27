@@ -1,0 +1,32 @@
+# YuanJiang OpsGuard — conda environment
+# Create: conda env create -f environment.yml
+# Update: conda env update -f environment.yml
+
+name: opsguard
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Core Python
+  - python=3.11
+
+  # Data & analytics
+  - pandas
+  - duckdb
+  - sqlglot
+
+  # LLM client
+  - pip
+  - httpx
+
+  # Document processing
+  - pip:
+      - ollama
+      - pydantic
+      - langgraph
+      - streamlit
+      - pytest
+      - docling
+      - pymupdf4llm
+      - pymupdf
